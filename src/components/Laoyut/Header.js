@@ -9,7 +9,7 @@ const Header = (props) => {
     <>
         <header className={styles.header}>
             <h1>Японская Кухня</h1>
-            <HeaderCartButton/>
+            <HeaderCartButton onClick={props.onshowCart}/>
         </header>
         <div className={styles['main-image']}>
             <img src={SushiImage} alt="SushiImage" />
