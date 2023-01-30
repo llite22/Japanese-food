@@ -1,7 +1,7 @@
 import React from 'react';
 import SushiImage from '../../assets/sushi.jpg';
 import styles from './Header.module.css';
-
+import HeaderCartButton from './HeaderCartButton';
 
 
 const Header = (props) => {
@@ -9,7 +9,7 @@ const Header = (props) => {
     <>
         <header className={styles.header}>
             <h1>Японская Кухня</h1>
-            <button>Корзина</button>
+            <HeaderCartButton/>
         </header>
         <div className={styles['main-image']}>
             <img src={SushiImage} alt="SushiImage" />
